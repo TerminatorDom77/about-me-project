@@ -4,30 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dominic</title>
-    <style>
-      td {
-         border: 1px solid black;
-         padding: 3px;
-      }
-      a {
-         text-decoration: none;
-      }
-      a:hover{
-         text-decoration:underline;
-      }
-      table {
-        border-width: 1;
-        border-spacing: 3px;
-        border: 1px solid black;
-      }
-      col {
-        width: 95px;
-      }
-    </style>
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif">
+<body>
+   <div id="main-section">
    <h1>Dominic Liechty</h1>
-   <img src="Picture.jpg" alt="Picture of Dominic" height="500px">
+   <img src="Styles/Picture.jpg" alt="Picture of Dominic" height="500px">
    <div>
       <h2>Personal Info</h2>
       <ul>
@@ -51,12 +33,13 @@
      </div>
      <div>
          <h2>Poem: Camouflaged by Kim McCrea</h2>
-         <p>I found this short poem and liked it.</p>
-         <div><i>In all chaotic beauty lies a wounded work of art.</i></div>
-         <div><i>Beautiful but torn, wreaking havoc on my heart.</i></div>
-         <div><i>Camouflaged by insecurities, blinded by it all.</i></div>
-         <div><i>I love the way you sit there and barely notice me at all.</i></div>
-         <br>
+         <div>I found this short poem and liked it.</div>
+         <div id="poem">
+            <div><i>In all chaotic beauty lies a wounded work of art.</i></div>
+            <div><i>Beautiful but torn, wreaking havoc on my heart.</i></div>
+            <div><i>Camouflaged by insecurities, blinded by it all.</i></div>
+            <div><i>I love the way you sit there and barely notice me at all.</i></div>
+         </div>
          <a href="https://www.familyfriendpoems.com/poem/camouflaged" target="_blank">Link to poem</a>
      </div>
      <div>
@@ -89,17 +72,17 @@
                <col>
             </colgroup>
                <tr>
-                  <td></td>
-                  <td>Monday</td>
-                  <td>Tuesday</td>
-                  <td>Wednesday</td>
-                  <td>Thursday</td>
+                  <th></th>
+                  <th class="day">Monday</th>
+                  <th class="day">Tuesday</th>
+                  <th class="day">Wednesday</th>
+                  <th class="day">Thursday</th>
                </tr>
                <tr>
                   <td>9:00</td>
-                  <td style="background-color: rgb(251, 172, 172); vertical-align: top; text-align: left" rowspan="8">Work</td>
+                  <td class="work" rowspan="8">Work</td>
                   <td></td>
-                  <td style="background-color: rgb(251, 172, 172); vertical-align: top; text-align: left" rowspan="8">Work</td>
+                  <td class="work" rowspan="10">Work</td>
                   <td></td>
                </tr>
                <tr>
@@ -109,8 +92,8 @@
                </tr>
                <tr>
                   <td>10:00</td>
-                  <td style="padding: 3px; background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="3">CS 2550</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="3">CS 2550</td>
+                  <td class="web" rowspan="3">CS 2550</td>
+                  <td class="web" rowspan="3">CS 2550</td>
                </tr>
                <tr>
                   <td>10:30</td>
@@ -138,21 +121,19 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
                </tr>
                <tr>
                   <td>1:30</td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
                </tr>
                <tr>
                   <td>2:00</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="2">STAT 2050</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="2">STAT 2050</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="2">STAT 2050</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="2">STAT 2050</td>
+                  <td class="stats" rowspan="2">STAT 2050</td>
+                  <td class="stats" rowspan="2">STAT 2050</td>
+                  <td class="stats" rowspan="2">STAT 2050</td>
+                  <td class="stats" rowspan="2">STAT 2050</td>
                </tr>
                <tr>
                   <td>2:30</td>
@@ -160,9 +141,9 @@
                <tr>
                   <td>3:00</td>
                   <td></td>
-                  <td style="background-color: rgb(251, 172, 172); vertical-align: top; text-align: left" rowspan="5">Work</td>
+                  <td class="work" rowspan="5">Work</td>
                   <td></td>
-                  <td style="background-color: rgb(251, 172, 172); vertical-align: top; text-align: left" rowspan="5">Work</td>
+                  <td class="work" rowspan="5">Work</td>
                </tr>
                <tr>
                   <td>3:30</td>
@@ -171,8 +152,8 @@
                </tr>
                <tr>
                   <td>4:00</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="3">CS 2450</td>
-                  <td style="background-color: rgb(28, 239, 53); vertical-align: top; text-align: left" rowspan="3">CS 2450</td>
+                  <td class="swe" rowspan="3">CS 2450</td>
+                  <td class="swe" rowspan="3">CS 2450</td>
                </tr>
                <tr>
                   <td>4:30</td>
@@ -181,6 +162,7 @@
                   <td>5:00</td>
                </tr>
          </table>
-     </div>
+      </div>
+   </div>
 </body>
 </html>
