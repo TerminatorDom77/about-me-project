@@ -11,7 +11,7 @@ h1 {
     margin-left: -10px;
     margin-right: -10px;
     padding: 10px 0px 10px 0px;
-    background: linear-gradient(to right, rgb(187, 229, 255), rgb(175, 111, 248));
+    background: linear-gradient(to right, rgb(187, 255, 223), rgb(175, 111, 248));
     border-bottom: 4px solid black;
 }
 h2 {
@@ -35,10 +35,16 @@ th {
     background-color: rgb(194, 194, 194);
     border: 1px solid rgb(0, 0, 0);
     padding: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 td {
     border: 1px solid rgb(0, 0, 0);
     padding: 3px;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(odd) {
     background-color: rgb(241, 241, 241);
 }
 col {
